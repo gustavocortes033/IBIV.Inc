@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBIV.Inc/Contacto</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="icon" href="images/IBIV-Inc-Logo.png" type="image/fenix-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Open+Sans:wght@300;800&family=Poppins:wght@100;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!--Main Section-->
+        <section class="header">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/IBIV-Inc-Logo.png" alt="Logo"></a>
+                </div>
+                <div class="company-name">
+                    <a href="index.html">IBIV.Inc</a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class='bx bx-x' onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="Services.html">Servicios</a></li>
+                        <li><a href="Admission.html">Admisión</a></li>
+                        <li><a href="Contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <i class='bx bx-menu' onclick="showMenu()"></i>
+            </nav>
+            <!--Main Section Information-->
+            <div class="text-box">
+                <br/>
+                <br/>
+                <h1>Contactanos</h1>
+                
+            </div>
+        </section>
+       
+     
+       <!--Contact-Information-Section-One-->
+       <section class="information">
+            <h1>Información de Contacto</h1>
+            <p>¡Para mas Información llama y orientate!.</p>
+            <!--Whatsapp-Row-One-->
+            <div class="row">
+             <div class="information-col">
+                <img src="images/Whatsapp-logo.png" alt="Whatsapp-logo">
+                <div>
+                    <h3>Numero de Telefono</h3>
+                    <p>(939) 902-5340</p>
+                    <p>(939) 649-0836</p>
+                </div>
+             </div>
+             <!--Facebook-Row-Two-->
+             <div class="information-col">
+                <img src="images/Facebook-logo.png" alt="Facebook-logo">
+                <div>
+                    <h3>Pagina de Facebook</h3>
+                    <p>Instituto para el Bienestar e Integración de la Vejéz Inc.</p>
+                   
+                </div>
+             </div>
+            </div>
+            <div class="row">
+             <!--Gmail-Row-Three-->
+             <div class="information-col">
+                <img src="images/Email-logo.png" alt="Email-logo">
+                <div>
+                    <h3>Correo Electronico</h3>
+                    <p>ibivhogar@gmail.com</p>
+                   
+                </div>
+             </div>
+             <!--Pin-Ubicacion-Row Four-->
+             <div class="information-col">
+                <img src="images/Pin-logo.png" alt="Pin-logo">
+                <div>
+                    <h3>Pin de ubicación</h3>
+                    <p>Carr. 445 Km.6.9 Int.Bo.Saltos#2 San Sebastian, P.R</p>
+                   
+                </div>
+             </div>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <!---Location_Ping-->
+    <section class="location">
+      <!---Map-->
+      <h1>Pin de ubicación</h1>
+      <br/>
+      <br/>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.169306464981!2d-67.03203632503552!3d18.385144073297425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c02b9c6ecbf372b%3A0x660b16f25032709a!2sHogar%20IBIV!5e0!3m2!1sen!2spr!4v1723923125414!5m2!1sen!2spr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <hr/>
+    <br/>
+    <br/>
+    <br/>
+    <section class="form">
+        <!-- Admission-Section-Form -->
+        <div class="admission-box" id="Form1">
+            <h3>¡Cualquier pregunta, escríbanos y obtenga orientación!</h3>
+            <form class="admission-form" action="https://formsubmit.co/ab628e96b9182dea173e658d5ae99bf5" method="POST">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+    
+                <label for="phone">Número de Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Número de Teléfono" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escriba su mensaje aquí..." rows="4" required></textarea>
+    
+                <button type="submit" class="Main-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <hr/>
+    <!--Footer-->
+    <section class="Footer">
+        <h4>IBIV.Inc</h4>
+        <p>Instituto para el Bienestar e Integración de la Vejéz Inc.</p>
+        <p>2024 Made by <i class='bx bx-code-alt'></i> ElevateCode All rights reserved</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61564303014290" ><i class='bx bxl-facebook-circle'></i></a>
+        </div>
+       
+    </section>
+    </main>
+
+    <!--JavaScript Menu Phone-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-100%";
+        }
+    </script>
+</body>
+</html>

@@ -13,7 +13,7 @@ body, html {
 .header {
     min-height: 100vh; 
     width: 100%; 
-    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(images/Admission-image.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(images/Contact-image.png);
     background-position: center center; 
     background-size: cover;
     background-repeat: no-repeat; 
@@ -120,7 +120,24 @@ nav {
     font-weight:500;
 }
 
+.Main-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ff8364;
+    padding: 12px 34px;
+    font-size: 1vw; 
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+}
 
+.Main-btn:hover {
+    border: 2px solid #fff;
+    background: #ff8364;
+    transition: 0.5s;
+}
 
 nav .bx {
     display: none;
@@ -166,42 +183,142 @@ nav .bx {
         cursor: pointer;
     }
 }
-/*Policy-Admission-Section*/
-.policy-content {
+
+
+/*Services-Section-Css*/
+
+.services{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.services h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.services p{
+    color:#777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-col{
+    border: 2px solid #a8896c;
+    flex-basis: 31%;
+    background:#fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.services-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+/*Services-Section-responsive-Desgin*/
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/*Contact-Information*/
+
+.information{
+    width: 80%;
+    margin:auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.information h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.information p{
+    color:#777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.information-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:#fff3f3;
+    border: 2px solid #a8896c;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.information-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.information-col p{
+   padding: 0;
+   font-size: 16px;
+}
+
+.information-col h3{
+    margin-top: 5px;
+    text-align: left;
+}
+/*Contact-Information-Responsive-css*/
+@media (max-width: 700px){
+    .information-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    
+}
+
+
+/*Map-Css*/
+.location h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+.location{
     width: 80%;
     margin: auto;
-    padding: 60px 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+    padding: 80px 0;
 }
 
-.policy-left {
-    flex-basis: 65%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+.location iframe{
+    width: 100%;
 }
 
-.policy-left img {
-    max-width: 50%; 
-    height: auto; 
-    border-radius: 10px; 
-}
-
-.policy-left h2 {
-    color: #222;
-    font-weight: 600;
-    margin: 30px 0;
-    text-align: center; 
-}
-
-.policy-left p {
-    padding: 0;
-    line-height: 1.5rem;
-    text-align: justify;
-}
-/*Admission-Form-Css*/
+/* Admission-Form-Css */
 .admission-box {
     max-width: 400px;
     margin: 0 auto;
@@ -227,12 +344,17 @@ nav .bx {
     font-weight: bold;
 }
 
-.admission-form input {
+.admission-form input,
+.admission-form textarea {
     margin-bottom: 15px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.admission-form textarea {
+    resize: vertical;
 }
 
 .Main-btn {
@@ -249,8 +371,6 @@ nav .bx {
 .Main-btn:hover {
     background-color: #e57373;
 }
-
-
 
 /*Footer*/
 

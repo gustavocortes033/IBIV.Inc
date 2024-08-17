@@ -40,6 +40,22 @@ nav {
     object-fit: cover;
 }
 
+.company-name {
+   margin-left : 15px; 
+}
+
+.company-name a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+.company-name a:hover {
+    color:#ff8364;
+    text-decoration: none; 
+
+}
 .nav-links {
     flex: 1;
     text-align: right;
