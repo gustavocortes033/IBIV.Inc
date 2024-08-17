@@ -4,14 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBIV.Inc</title>
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Open+Sans:wght@300;800&family=Poppins:wght@100;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
+        <!--Main Section-->
         <section class="header">
-           
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/IBIV-Inc-Logo.png" alt="Logo"></a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class='bx bx-x' onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="Services.html">Servicios</a></li>
+                        <li><a href="Admission.html">Admisión</a></li>
+                        <li><a href="Contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <i class='bx bx-menu' onclick="showMenu()"></i>
+            </nav>
+            <!--Main Section Information-->
+            <div class="text-box">
+                <br/>
+                <br/>
+                <h1>Experiencia y bienestar en un solo lugar</h1>
+                <p>Cada día es una oportunidad para vivir con dignidad, cariño y alegría</p>
+                <a href="about.html" class="Main-btn">Conócenos</a>
+            </div>
         </section>
+       <!--Services Section-->
+       <section class="services">
+          <h1>Nuestros Servicios</h1>
+          <p>Conoce los servicios que ofrecemos y cómo podemos ayudarte.</p>
+        <!--First Row-->
+          <div class="row">
+            <div class="services-col">
+                <h3>Servicio de Atención 24/7</h3>
+                <p>Ofrecemos servicio las 24 horas al día, 7 dias a la semana.</p>
+            </div>
+            <div class="services-col">
+                <h3>Transporte a Hospitales y Citas Médicas</h3>
+                <p>Transportación a hospitales y citas medicas dentro del area oeste.</p>
+            </div>
+            <div class="services-col">
+                <h3>Servicio de Enfermería y Trabajo Social</h3>
+                <p>Servicio de enfermeria, trabajo social y lider recreativo.</p>
+            </div>
+            
+          </div>
+          <!--Second Row-->
+          <div class="row">
+            <div class="services-col">
+                <h3>Servicios Médicos</h3>
+                <p>Servicios Médicos y hospicio.</p>
+            </div>
+            <div class="services-col">
+                <h3>Asesoría para el Cuidado de Mayores</h3>
+                <p>Orientación Especializada para el Cuidado y Bienestar de Nuestros Clientes.</p>
+            </div>
+            <div class="services-col">
+                <h3>Cuidados Durante tus Viajes</h3>
+                <p>Cuidamos a tu familiar mientras viajas.</p>
+            </div>
+          </div>
+         <!--Third Row-->
+          <div class="row">
+            <div class="services-col">
+                <h3>Continuidad de Tratamientos</h3>
+                <p>Continuidad de tratamientos pre-escritos por orden medica,coordinación y administración de medicamentos.</p>
+            </div>
+            <div class="services-col">
+                <h3>Servicios de Alimentación Balanceada</h3>
+                <p>Servicios de alimentación balanceada de acuerdo a las necesidades del cliente por una nutrición certificada.</p>
+            </div>
+            <div class="services-col">
+                <h3>Recreación Interna y Externa</h3>
+                <p> Recreación interna y externa con un programa de actividades estructurado.</p>
+            </div>
+          </div>
+       </section>
+       <hr/>
+       <!--Senior-images-section-->
+       <section class="Seniors">
+           <h1>Vive la Vida al Máximo</h1>
+           <p>Cuidamos de ti como tú te mereces.</p>
+           <div class="row">
+            <!---Image-One-->
+            <div class="Seniors-col">
+                <img src="images/Senior-person-1.png" alt="Senior">
+            <!--Image-Two-->
+            </div>
+            <div class="Seniors-col">
+                <img src="images/Senior-person-2.png" alt="Senior">
+            <!--Image-Three-->
+            </div>
+            <div class="Seniors-col">
+                <img src="images/Senior-person-3.png" alt="Senior">
+                
+            </div>
+           </div>
+       </section>
+       <hr/>
+       <!--Facilities-Section-->
+       <section class="Facilities">
+            <h1>Nuestras Instalaciones</h1>
+            <p>Tu familia, nuestro hogar. Juntos, construimos una vida plena.</p>
+            <div class="row">
+                <!--Senior-Center-Image-->
+                <div class="Facilities-col">
+                    <img src="images/Senior-Center.png" alt="Senior-center">
+                    <h3>Centro IBIV.Inc</h3>
+                    <p>Un hogar donde recibiran el cuidado y la atención que merecen.</p>
+                </div>
+                <!--Living-Room-Image-->
+                <div class="Facilities-col">
+                    <img src="images/Senior-living-room.png" alt="Senior-living-Room">
+                    <h3>Sala de estar</h3>
+                    <p>Disfruta de actividades recreativas y eventos sociales en nuestra sala de estar.</p>
+                </div>
+                <!--Sleep-Room-->
+                <div class="Facilities-col">
+                    <img src="images/Senior-Sleep-room.png" alt="Senior-Sleep-Room">
+                    <h3>Habitaciones</h3>
+                    <p>Habitaciones acogedoras, diseñadas para brindar el máximo confort y privacidad.</p>
+                </div>
+            </div>
+       </section>
+       <hr/>
+       <!--Contact-Information-Section-One-->
+       <section class="information">
+            <h1>Información de Contacto</h1>
+            <p>¡Para mas Información llama y orientate!.</p>
+            <!--Whatsapp-Row-One-->
+            <div class="row">
+             <div class="information-col">
+                <img src="images/Whatsapp-logo.png" alt="Whatsapp-logo">
+                <div>
+                    <h3>Numero de Telefono</h3>
+                    <p>(939) 902-5340</p>
+                    <p>(939) 649-0836</p>
+                </div>
+             </div>
+             <!--Facebook-Row-Two-->
+             <div class="information-col">
+                <img src="images/Facebook-logo.png" alt="Facebook-logo">
+                <div>
+                    <h3>Pagina de Facebook</h3>
+                    <p>Instituto para el Bienestar e Integración de la Vejéz Inc.</p>
+                   
+                </div>
+             </div>
+            </div>
+            <div class="row">
+             <!--Gmail-Row-Three-->
+             <div class="information-col">
+                <img src="images/Email-logo.png" alt="Email-logo">
+                <div>
+                    <h3>Correo Electronico</h3>
+                    <p>ibivhogar@gmail.com</p>
+                   
+                </div>
+             </div>
+             <!--Pin-Ubicacion-Row Four-->
+             <div class="information-col">
+                <img src="images/Pin-logo.png" alt="Pin-logo">
+                <div>
+                    <h3>Pin de ubicación</h3>
+                    <p>Carr. 445 Km.6.9 Int.Bo.Saltos#2 San Sebastian, P.R</p>
+                   
+                </div>
+             </div>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <!---Contact-Information-Section-Two-->
+    <section class="cta">
+        <h1>Ofrecemos un cuidado de alta calidad. <br/>¡Contáctanos para conocer nuestros planes y programas!</h1>
+        <br/>
+        <br/>
+        <a href="Contact.html" class="Main-btn">Contactanos</a>
+    </section>
+  <hr/>
+    <!--Footer-->
+    <section class="Footer">
+        <h4>IBIV.Inc</h4>
+        <p>Instituto para el Bienestar e Integración de la Vejéz Inc.</p>
+        <p>2024 Made by <i class='bx bx-code-alt'></i> ElevateCode All rights reserved</p>
+        <div class="icons">
+            <i class='bx bxl-facebook-circle'></i>
+        </div>
+       
+    </section>
     </main>
-    
+
+    <!--JavaScript Menu Phone-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-100%";
+        }
+    </script>
 </body>
 </html>

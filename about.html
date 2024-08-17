@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBIV.Inc About us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Open+Sans:wght@300;800&family=Poppins:wght@100;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!--Navbar-->
+        <section class="header">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/IBIV-Inc-Logo.png" alt="Logo"></a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class='bx bx-x' onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="Services.html">Servicios</a></li>
+                        <li><a href="Admission.html">Admisión</a></li>
+                        <li><a href="Contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <i class='bx bx-menu' onclick="showMenu()"></i>
+            </nav>
+             <!--About us heading Section Information-->
+            <div class="sub-header">
+            <div class="text-box">
+                <br/>
+                <br/>
+                <h1>Nosotros</h1>
+               
+            </div>
+           </div>
+        </section>
+        <!--About-us-content-->
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h1>Nuestra Misión y Visión</h1>
+                    <p>Misión: Mejorar la calidad de vida de los adultos mayores brindando los servicios y cuidados necesarios para cubrir sus necesidades básicas. Estamos comprometidos en ofrecer asistencia que se ajuste a las condiciones de la población a la cual brindamos servicio, esto siguiendo los requisitos establecidos por ley.
+                    </p>
+                    <p>Visión: Nuestros servicios serán dirigidos al desarrollo del bienestar general de la población servida. Siendo pro activo al atender las necesidades biológicas, psicológicas, sociales y espirituales. </p>
+                    <a href="Admission.html#Form1" class="Main-btn">Admisión</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/Mission-image.png" alt="Hands">
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <!--Footer-->
+        <section class="Footer">
+           
+            <h4>IBIV.Inc</h4>
+            <p>Instituto para el Bienestar e Integración de la Vejéz Inc.</p>
+            <p>2024 Made by <i class='bx bx-code-alt'></i> ElevateCode All rights reserved</p>
+            <div class="icons">
+                <i class='bx bxl-facebook-circle'></i>
+            </div>
+           
+        </section>
+    </main>
+       <!--JavaScript Menu Phone-->
+       <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-100%";
+        }
+    </script>
+</body>
+</html>

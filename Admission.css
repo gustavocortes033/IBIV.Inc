@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+body, html {
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+.header {
+    min-height: 100vh; 
+    width: 100%; 
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(images/Admission-image.png);
+    background-position: center center; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+hr {
+    border: 2px solid #a8896c;
+    margin: 20px 0;
+  }
+nav {
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a8896c;
+    position: relative;
+    z-index: 10; 
+}
+
+.logo img {
+    width: 50px;
+    height: auto; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 16px 8px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff8364;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-family: "Poppins", sans-serif;
+    margin-top: 0;
+    font-size: 2vw;
+    color: #fff;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 1.5vw; 
+    color: #fff;
+    font-weight:500;
+}
+
+.Main-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ff8364;
+    border: 1px solid #ff8364;
+    padding: 12px 34px;
+    font-size: 1vw; 
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.Main-btn:hover {
+    color: #fff;
+    border: 2px solid #ff8364;
+    background: #ff8364;
+    transition: 0.5s;
+}
+
+nav .bx {
+    display: none;
+}
+
+/*Responsive-Css-Main-Section*/
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 4vw; /
+    }
+
+    .text-box p {
+        font-size: 3vw; /
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #ff8364;
+        height: 100vh; 
+        width: 100%; 
+        top: 0;
+        right: -100%; 
+        overflow-y: auto; 
+        text-align: left;
+        z-index: 2;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 20px; 
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        display: block; 
+    }
+
+    nav .bx {
+        display: block;
+        color: #fff;
+        font-size: 30px; 
+        cursor: pointer;
+    }
+}
+/*Policy-Admission-Section*/
+.policy-content {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Centra los elementos hijos verticalmente si es necesario */
+}
+
+.policy-left {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column; /* Asegura que la imagen y el texto se alineen verticalmente si hay más contenido */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+}
+
+.policy-left img {
+    max-width: 50%; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Agrega bordes redondeados si lo deseas */
+}
+
+.policy-left h2 {
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: center; /* Centra el título */
+}
+
+.policy-left p {
+    padding: 0;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+/*Admission-Form-Css*/
+.admission-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admission-box h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.admission-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admission-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.admission-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Main-btn {
+    background-color: #ff8364;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.Main-btn:hover {
+    background-color: #e57373;
+}
+
+
+
+/*Footer*/
+
+.Footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.Footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    color:#ff8364;
+    font-weight: 600;
+}
+
+.Footer p{
+    color: #777;
+}
+
+.icons .bx{
+    color:#ff8364;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 20px;
+   
+}
+
+.bx-code-alt{
+    color: darkblue;
+}
