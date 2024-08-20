@@ -42,6 +42,7 @@ nav {
 
 .company-name {
    margin-left : 15px; 
+   
 }
 
 .company-name a {
@@ -49,6 +50,8 @@ nav {
     color: #fff; 
     font-size: 20px; 
     font-weight: bold; 
+    letter-spacing: 3px;
+  
 }
 
 .company-name a:hover {
